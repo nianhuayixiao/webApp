@@ -1,0 +1,6 @@
+<ul class="tab">
+    <li class="{{selectedId==item.id?'active':''}}"
+        ng-repeat="item in list"
+        ng-bind="item.name"
+        ng-click="changeTab(item)"></li>
+</ul>

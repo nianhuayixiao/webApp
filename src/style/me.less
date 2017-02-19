@@ -1,0 +1,45 @@
+.me{
+    .ml(50);
+    .mr(50);
+    .mt(100);
+    text-align: center;
+    p{
+        .fs(18);
+        .mt(10);
+    };
+    button{
+        border: 0;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        .mt(30);
+        .mb(20);
+        button{
+            width:45%;
+            .h(40);
+            .lh(40);
+            background: @headBgColor;
+            color:@colorW;
+        }
+    }
+    .btn-exit{
+        width: 100%;
+        background: @colorR;
+        color:@colorW;
+        .h(40);
+        .lh(40);
+    }
+}
+.btn-login2{
+    .w(100);
+    .h(40);
+    .lh(40);
+    background: @headBgColor;
+    color: @colorW;
+    border: 0;
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%);
+}

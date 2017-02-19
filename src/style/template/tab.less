@@ -1,0 +1,19 @@
+.tab {
+    position: fixed;
+    .top(40);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: @bgColorW;
+    li {
+        text-align: center;
+        list-style: none;
+        width: 33.3%;
+        border-bottom: 2px solid transparent;
+        .h(40);
+        .lh(40);
+        &.active {
+            border-bottom: 2px solid @headBgColor;
+        }
+    }
+}

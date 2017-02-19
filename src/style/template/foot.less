@@ -1,0 +1,40 @@
+.foot {
+    .h(40);
+    .lh(40);
+    background-color: @bgColorW;
+    border-top: 1px solid @lineColor;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+        .fs(20);
+        list-style: none;
+        width: 33%;
+        i {
+            margin-right: 5px;
+        }
+        .icon-position {
+            background: url(../image/position.png);
+            width: 25px;
+            height: 21px;
+        }
+        .icon-search {
+            background: url(../image/search.png);
+            width: 24px;
+            height: 24px;
+        }
+        .icon-my {
+            background: url(../image/my.png);
+            width: 23px;
+            height: 25px;
+        }
+        &.select {
+            color: @hightColor;
+            background-color: @hightBgColor;
+        }
+    }
+}

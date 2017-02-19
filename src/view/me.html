@@ -1,0 +1,11 @@
+<div class="me" ng-if="id">
+    <img ng-src="{{image}}" alt="">
+    <p ng-bind="name"></p>
+    <div>
+        <button class="btn-post" ui-sref="post">我的投递</button>
+        <button class="btn-favorite" ui-sref="favorite">我的收藏</button>
+    </div>
+    <button class="btn-exit" ng-click="signOut();">退出</button>
+</div>
+<button class="btn-login2" ng-hide="id" ui-sref="login">登陆</button>
+<div app-foot></div>

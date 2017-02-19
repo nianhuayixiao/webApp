@@ -1,0 +1,36 @@
+.position-class{
+    background-color: @bgColorW;
+    padding:10px;
+    bottom-top:1px solid @lineColor;
+    h3{
+        margin-bottom: 20px;
+    }
+    button{
+        background:@hightBgColor;
+        padding:10px 25px;
+        border-radius: 30px;
+        outline-width: 0;
+        &.active{
+            color:@colorW;
+            background:@headBgColor;
+        }
+    }
+    ul{
+        margin-top:10px;
+        border-top:1px solid @lineColor;
+        background:@bgColorW;
+        li{
+            list-style: none;
+            position:relative;
+            p{
+                .lh(30);
+            }
+            span{
+                position:absolute;
+                right:10px;
+                top:15px;
+                color:@colorR;
+            }
+        }
+    }
+}

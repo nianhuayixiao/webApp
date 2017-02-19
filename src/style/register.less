@@ -1,0 +1,99 @@
+.input {
+    padding: 0 10px;
+    box-sizing: border-box;
+    .h(40);
+    .lh(40);
+    background: rgba(0, 0, 0, .2);
+    border: 0;
+}
+
+.register {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: url('../image/background.png');
+    form {
+        .mt(60);
+        .mr(50);
+        .ml(50);
+        display: flex;
+        flex-direction: column;
+        font-size: 0;
+        .clearfix {
+            .mb(20);
+            &:first-child {
+                .mb(1);
+            }
+            i {
+                display: inline-block;
+                .w(40);
+                .h(40);
+                .lh(40);
+                &.icon-accont {
+                    background: rgba(0, 0, 0, .6) url('../image/account.png') no-repeat center;
+                }
+            ;
+                &.icon-password {
+                    background: rgba(0, 0, 0, .6) url('../image/lock.png') no-repeat center;
+                }
+            }
+            input {
+                .input;
+                &.f-l {
+                    width: calc(~"100% - 40px");
+                }
+                &::-webkit-input-placeholder {
+                    color: @colorW;
+                }
+                color: @colorW;
+            }
+            &:after {
+                display: block;
+                content: '';
+                clear: both;
+                height: 0;
+            }
+        };
+        .code-btn {
+            display: flex;
+            justify-content: space-between;
+            .code {
+                width: 50%;
+                .input;
+            }
+            .send-code {
+                width: 30%;
+                background: @headBgColor;
+                border: 0;
+                color: @colorW;
+                border-radius: 10px;
+                &.disabled{
+                    background: rgba(0,0,0,.2);
+                }
+            }
+        };
+        .btn {
+            .h(40);
+            .lh(40);
+            border: 0;
+            font-weight: bold;
+            .fs(20);
+            &.btn-login {
+                .mt(20);
+                color: @colorW;
+                background: @headBgColor;
+            }
+            &.btn-register {
+                .mt(10);
+                color: @headBgColor;
+                background: rgba(5,191,182,0.2);
+            }
+        }
+        input+span{
+            .fs(16);
+            text-align: right;
+            color: @colorR;
+        }
+    }
+}
