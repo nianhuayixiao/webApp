@@ -3,7 +3,7 @@
  */
 'use strict';
 
-angular.module('app',['ui.router','ngCookies','validation']);
+angular.module('app',['ui.router','ngCookies','validation','ngAnimate']);
 /**
  * Created by yc on 2017/2/16.
  */

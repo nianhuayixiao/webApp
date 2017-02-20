@@ -187,7 +187,7 @@ pre.position-duty {
 .position-class {
   background-color: #fff;
   padding: 10px;
-  bottom-top: 1px solid #eee;
+  border-top: 1px solid #eee;
 }
 .position-class h3 {
   margin-bottom: 20px;
@@ -197,6 +197,8 @@ pre.position-duty {
   padding: 10px 25px;
   border-radius: 30px;
   outline-width: 0;
+  border-width: 0;
+  margin-right: 0.26666667rem;
 }
 .position-class button.active {
   color: #fff;
@@ -548,6 +550,15 @@ pre.position-duty {
 }
 .post.position-list {
   margin-top: 1.12rem;
+}
+/* The starting CSS styles for the enter animation */
+.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+/* The finishing CSS styles for the enter animation */
+.ng-enter.ng-enter-active {
+  opacity: 1;
 }
 * {
   margin: 0;
